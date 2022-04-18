@@ -1,5 +1,7 @@
 this is just for my github.io page
 
+*Viewing this on GitHub? Check out the shit [here](https://devin503.github.io)*
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/devin503/devin503.github.io/edit/the-sus-page/README.md) to maintain and preview the content for your website in Markdown files.
