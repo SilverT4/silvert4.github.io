@@ -2,10 +2,10 @@
 	"alerts": {
 		"alert": [
 			{
-				"desc": "...IMPOSTORS CONTINUE TO CAUSE CHAOS...\nImpostors continue to run rampant around Polus and cause chaos, resulting in the\nmurders of innocent crewmates and other civilians. For your protection, please move to the lowest level\nof your home, such as a basement,\nor the furthest room from any doors or windows.\nIf you suspect anyone in your home of being an Impostor,\ncall 9-1-1 immediately or use any weapons you may have\nto defend yourself, if you cannot make any phone calls.",
+				"desc": "...IMPOSTORS CONTINUE TO CAUSE CHAOS...\nImpostors continue to run rampant around Polus and cause chaos, resulting in the\nmurders of innocent crewmates and other civilians. For your protection, please move to the\nlowest levelof your home, such as a basement,\nor the furthest room from any doors or windows.\nIf you suspect anyone in your home of being an Impostor,\ncall 9-1-1 immediately or use any weapons you may have\nto defend yourself, if you cannot make any phone calls.",
 				"urgency": "Suspicious",
 				"note": "amogus",
-				"event": "Emergency Action Notification",
+				"event": "Sus Warning",
 				"msgtype": "Gamer",
 				"expires": "2069-04-20T04:20:00-05:00",
 				"headline": "Among Us In Real Life (SUS! SUS!)",
