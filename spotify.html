@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify Callback</title>
+</head>
+<body>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const token = params.get('token'); // Replace with the parameter you expect
+        const response = { token: token };
+        document.body.textContent = JSON.stringify(response);
+    </script>
+</body>
+</html>
