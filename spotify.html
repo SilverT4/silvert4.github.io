@@ -6,8 +6,8 @@
 <body>
     <script>
         const params = new URLSearchParams(window.location.search);
-        const token = params.get('token'); // Replace with the parameter you expect
-        const response = { token: token };
+        const token = params.get('code'); // Replace with the parameter you expect
+        const response = { code: token, state: params.get('state') };
         document.body.textContent = JSON.stringify(response);
     </script>
 </body>
