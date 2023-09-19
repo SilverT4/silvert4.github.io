@@ -4,11 +4,42 @@
     <title>Spotify Callback</title>
 </head>
 <body>
+    <div id="json-container"></div>
+    <button id="copy-button">Copy to Clipboard</button>
+
     <script>
         const params = new URLSearchParams(window.location.search);
         const token = params.get('code'); // Replace with the parameter you expect
         const response = { code: token, state: params.get('state') };
-        document.body.textContent = JSON.stringify(response);
+
+        // Display JSON data
+        const jsonContainer = document.getElementById('json-container');
+        jsonContainer.textContent = JSON.stringify(response, null, 2);
+
+        // Copy to Clipboard
+        const copyButton = document.getElementById('copy-button');
+        copyButton.addEventListener('click', function () {
+            const textToCopy = JSON.stringify(response, null, 2);
+
+            // Create a text area element to temporarily hold the text
+            const textArea = document.createElement('textarea');
+            textArea.value = textToCopy;
+
+            // Append the text area to the document
+            document.body.appendChild(textArea);
+
+            // Select the text inside the text area
+            textArea.select();
+
+            // Copy the selected text to the clipboard
+            document.execCommand('copy');
+
+            // Remove the temporary text area
+            document.body.removeChild(textArea);
+
+            // Change the button text to indicate success
+            copyButton.textContent = 'Copied!';
+        });
     </script>
 </body>
 </html>
